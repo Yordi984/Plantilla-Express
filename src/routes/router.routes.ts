@@ -1,8 +1,8 @@
 import { Router } from "express";
-import { saludar } from "../controllers/user.controller";
+import { crearEstudiante } from "../controllers/estudiante.controller";
 
 const router = Router();
 
-router.get("/saludo", saludar);
+router.post("/estudiante", crearEstudiante);
 
 export default router;
